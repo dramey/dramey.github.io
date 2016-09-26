@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weatherly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="yeti.css">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="weatherHw.css">
+
+</head>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!--Facebook Share Button-->
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdramey.github.io%2Flinks.html&layout=box_count&size=large&mobile_iframe=false&width=73&height=58&appId"
+            width="73" height="58" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <button type="button" class="btn btn-primary btn-lg"><a href="https://weather.com/?cm_ven=PS_GGL_Channel_9102015_1&gclid=CLDa8M2_n88CFY48gQodbcMM7w" target="_blank">Weather Channel</a></button>
+    </nav>
+</div>
+
+<body>
+
+    <h1 class="topTitle">Deb's Weather App</h1>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 yourCity card">
+                <h4 class="popOutText">Current Weather for any Location</h4>
+
+                <div>
+                    <input id="address" type="text" placeholder="ZipCode or City & State">
+                    <button id="addLocation" type="button" class="btn btn-primary btn-xs">Add</button>
+
+                </div>
+
+                <div id="yourLocation"></div>
+            </div>
+
+            <div class="col-sm-2"></div>
+
+            <div class="container2">
+                <div class="col-sm-5 yourCityFront card">
+
+                    <div class="card2">
+                        <div class="face front">
+                            <h5 class="popOutText">Hover over to flip to Weekly Information</h5>
+                        </div>
+                        <div class="card2 yourCity face back">
+                            <!--<input id="addressWeekly" type="text" placeholder="ZipCode or City & State">
+                             <button id="addLocationWeekly" type="button" class="btn btn-primary btn-xs">Add</button>-->
+                            <div id="yourLocationWeekly"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <hr />
+
+    <h1 class=sectionTitle>Current Weather for my Favorite Locations</h1>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-3 paintsvilleCity card">
+                <h4> Paintsville, Kentucky </h4>
+                <hr />
+                <h2 id="tempPaintsville"></h2>
+                <h6 id=tempPvilleSum></h6>
+                <h5 id="rainPvillePoss"></h5>
+                <h5 id="minTempPville"></h5>
+                <h5 id="maxTempPville"></h5>
+            </div>
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-3 pigeonForgeCity card">
+                <h4>Pigeon Forge, Tennessee</h4>
+                <hr />
+                <h2 id="tempPig"></h2>
+                <h6 id=tempPigSum></h6>
+                <h5 id="rainPigPoss"></h5>
+                <h5 id="minTempPig"></h5>
+                <h5 id="maxTempPig"></h5>
+
+            </div>
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-3 huntingtonCity card">
+                <h4>Huntington, West Virginia </h4>
+                <hr />
+                <h2 id="tempHunt"></h2>
+                <h6 id=tempHuntSum></h6>
+                <h5 id="rainHuntPoss"></h5>
+                <h5 id="minTempHunt"></h5>
+                <h5 id="maxTempHunt"></h5>
+            </div>
+
+
+        </div>
+
+
+        <!-- Official JQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Official Bootstrap -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <!-- Our project JS -->
+        <script src="weatherHw.js"></script>
+        <!--Facebook Share Button script-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+
+</html>
