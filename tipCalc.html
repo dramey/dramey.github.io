@@ -13,11 +13,13 @@
         crossorigin="anonymous">
     <!--My style sheet-->
     <link rel="stylesheet" href="tipCalc.css">
+  
 
 </head>
 
 <body>
-
+     <span class='st_sharethis_large' displayText='ShareThis'></span>
+     <span class='st_facebook_large' displayText='Facebook'></span>
     <h1>Deb's Tip Calculator</h1>
     <hr />
 
@@ -27,7 +29,7 @@
             <div class="col-sm-5 classBack">
                 <h3>Enter the Amount of Your Bill Below</h3>
 
-                <p><input type="number" maxlength="7" id="amountOfBill" placeholder="Enter Amount">
+                <p><input type="number" id="amountOfBill" placeholder="Enter Amount" maxlength="6">
                     <p>
 
                         <h3>Calculate your Tip</h3>
@@ -60,7 +62,10 @@
         </div>
     </div>
 
-
+     <!--This is for my Share button-->
+     <script type="text/javascript">var switchTo5x=true;</script>
+     <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+     <script type="text/javascript">stLight.options({publisher: "8d5e89c4-7522-453f-b2c8-dc0299da8e05", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
     <!-- Official JQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
