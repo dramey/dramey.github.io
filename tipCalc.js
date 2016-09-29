@@ -35,7 +35,7 @@ $("#add").click(function () {
                 .append("<center>" + "Tip Per Person:" +  "$" + totalTipEach + "</center>" + "<br />")
                 .append ("<p>" + "Total Bill per Person:" + "$" + totalBillIfSplit + "</center>" + "<br />" + "</p>")
                 $("#showAmounts").append(div);
-                
+                $("#amountOfBill").val("");
     
     };
     // this clears my page on click of my clear button
