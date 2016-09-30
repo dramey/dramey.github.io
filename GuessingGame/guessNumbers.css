@@ -1,0 +1,50 @@
+.topHead{
+  text-align: center;
+  font: 68px/68px "Chewy",Arial, sans-serif;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  color:mediumseagreen;
+}
+
+
+.topSection{
+    text-align: center;
+}
+.redFont{
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.greenFont{
+    color: green;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.yellowFont{
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.grayCard{
+    background-color: dimgray;
+    height: 450px;
+
+}
+.grayCard2{
+    background-color: dimgray;
+    height: 450px;
+
+}
+.peachCard{
+    background-color: peachpuff;
+    height: 450px;
+}
+input{
+    height: 300px;
+    width:300px;
+    font-size: 100px;
+}
+p{
+    text-align: right;
+}
+h4{
+    color: darkblue;
+    font-weight: bold;
+}
