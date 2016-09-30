@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maply</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="yeti.css">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="maply.css">
+
+</head>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!--Facebook Share Button-->
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdramey.github.io%2FweatherHw.html&layout=box_count&size=large&mobile_iframe=false&width=73&height=58&appId"
+            width="73" height="58" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <button type="button" class="btn btn-primary btn-lg"><a href="https://weather.com/?cm_ven=PS_GGL_Channel_9102015_1&gclid=CLDa8M2_n88CFY48gQodbcMM7w" target="_blank">Weather Channel</a></button>
+         <input id="address" type="text" placeholder="ZipCode or City & State">
+                    <button id="addLocation" type="button" class="btn btn-primary btn-xs">Add</button>
+   </nav>
+</div>
+
+<body>
+    <title>Deb's Maply</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div id="map">
+        
+    </div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm9yzZC060tdk-OB0BeGP3jD5THIGLoXo&callback=initMap"
+    async defer></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm9yzZC060tdk-OB0BeGP3jD5THIGLoXo&callback=initMap">
+    </script>-->
+
+        <!-- Official JQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Official Bootstrap -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <!-- Our project JS -->
+        <script src="maply.js"></script>
+        <!--Facebook Share Button script-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+
+</html>
