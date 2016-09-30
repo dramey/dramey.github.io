@@ -1,18 +1,19 @@
+var guessOne;
+var guessTwo;
+var guessThree;
+
 $(function () {
     
     var boxOneNumber = Math.floor((Math.random() * 9) + 0);
     var boxTwoNumber = Math.floor((Math.random() * 9) + 0);
     var boxThreeNumber = Math.floor((Math.random() * 9) + 0);
-    var guessOne = ""
-    var guessTwo = ""
-    var guessThree = ""
+
 
 $(".checkValues").click(function(){ 
-  if(guessOne == guessTwo || guessThree){
-    window.alert("All numbers must be different");
-} else if(guessTwo == guessOne || guessThree){
-   window.alert("All numbers must be different"); 
-} else if(guessThree == guessTwo || guessOne){
+    checkGuessOne();
+    checkGuessTwo();
+    checkGuessThree();
+  if(guessOne == guessTwo || guessOne == guessThree || guessTwo == guessThree){
   window.alert("All numbers must be different");  
 }else{
     return;
@@ -73,6 +74,22 @@ if(guessOne == boxOneNumber && guessTwo == boxTwoNumber && guessThree == boxThre
     };
 });
 });
+
+function checkGuessOne() {
+    guessOne = $("#guessOne").val();
+    console.log(guessOne);
+}
+
+function checkGuessTwo() {
+    guessTwo = $("#guessTwo").val();
+    console.log(guessOne);
+}
+
+function checkGuessThree() {
+    guessThree = $("#guessThree").val();
+    console.log(guessOne);
+}
+
 $("#newGame").click(function () {
     location.reload();
 });
