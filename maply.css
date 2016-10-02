@@ -1,16 +1,41 @@
-html, body { 
-    height: 100%;
-    margin: 0; 
-    padding: 0; 
-    }
-  #map { 
-      height: 100%;
-       }
-nav a{
-    color: white;
+body{
+    padding: 90px;
+    background-image: url("http://i4.liverpoolecho.co.uk/incoming/article10426537.ece/ALTERNATES/s1200/18-World-map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+nav a{
+    color: lightgreen;
+}
+.green{
+    border: solid 5px green;
+    box-shadow: 0 0 30px black;
+    border-style: ridge;
 
-
+}
+.topTitle{
+    color:black;
+    font-family: cursive;
+    font-size: 78px;
+    text-align: center;
+    text-shadow: -2px 0 lightgreen, 0 2px lightgreen, 2px 0 lightgreen, 0 -2px lightgreen;
+}
+.infoCard{
+    color:black;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: -2px 0 lightgreen, 0 2px lightgreen, 2px 0 lightgreen, 0 -2px lightgreen;
+}
+.onecard{
+    border-radius: 15px;
+    height: 450px;
+    border: solid 8px black;
+    border-style: ridge;
+    box-shadow: 0 0 60px lightgreen;
+   
+}
 
 
 
