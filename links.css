@@ -1,11 +1,17 @@
 body{
-background-color: mediumseagreen;
+background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk-UR_BgAYBsUyyTAU-87ob1-9D2P8MEOL-BgD3Q9es9UXpKHO");
+background-repeat: no-repeat;
+background-size: cover;
 }
 h1{
-    font-size: 28px;
-    color:pink;
+    font-size: 78px;
+    text-align: center;
+    color: lightgreen;
+    font-weight: bold;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-li a{
-    color: plum;
+a{
+    color: navajowhite;
+    font-size: 20px;
 }
