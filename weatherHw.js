@@ -13,7 +13,7 @@ $(function () {
             var placeLongitude = data.results[0].geometry.location.lng
 
 
-            var darksky = "https://api.darksky.net/forecast/1056fc5f281ea2e97bb54004e3cef822/" + placeLatitude + "," + placeLongitude;
+            var darksky = "https://api.darksky.net/forecast/2bc4604d535fc92dcddf937854e83437/" + placeLatitude + "," + placeLongitude;
             $.ajax(darksky, { dataType: "jsonp" }).done(function (data) {
                 console.log(data);
                 var div = $("<div></div>");
@@ -53,7 +53,7 @@ $(function () {
 
 // These functions are to hard pull specifically for "MY FAVORITE WEATHER"
 $(function () {
-    var darkSkyKey = "https://api.darksky.net/forecast/1056fc5f281ea2e97bb54004e3cef822/37.8332442,-82.8101975";
+    var darkSkyKey = "https://api.darksky.net/forecast/2bc4604d535fc92dcddf937854e83437/37.8332442,-82.8101975";
     $.ajax(darkSkyKey, { dataType: "jsonp" }).done(function (data) {
         $("#tempPaintsville").append("<h4>Current Temperature:" + " " + Math.round(data.currently.temperature) + "&deg;" + "</h4>")
         $("#tempPvilleSum").append("<h4>" + data.currently.summary + "</h4>")
@@ -64,7 +64,7 @@ $(function () {
     });
 
 
-    var darkSkyKey = "https://api.darksky.net/forecast/1056fc5f281ea2e97bb54004e3cef822/35.7974425,-83.5603112";
+    var darkSkyKey = "https://api.darksky.net/forecast/2bc4604d535fc92dcddf937854e83437/35.7974425,-83.5603112";
     $.ajax(darkSkyKey, { dataType: "jsonp" }).done(function (data) {
         $("#tempPig").append("<h4>Current Temperature:" + " " + Math.round(data.currently.temperature) + "&deg;" + "</h4>")
         $("#tempPigSum").append("<h4>" + data.currently.summary + "</h4>")
@@ -75,7 +75,7 @@ $(function () {
     });
 
 
-    var darkSkyKey = "https://api.darksky.net/forecast/1056fc5f281ea2e97bb54004e3cef822/38.4296528,-82.31894609999999";
+    var darkSkyKey = "https://api.darksky.net/forecast/2bc4604d535fc92dcddf937854e83437/38.4296528,-82.31894609999999";
     $.ajax(darkSkyKey, { dataType: "jsonp" }).done(function (data) {
         $("#tempHunt").append("<h4>Current Temperature:" + " " + Math.round(data.currently.temperature) + "&deg;" + "</h4>")
         $("#tempHuntSum").append("<h4>" + data.currently.summary + "</h4>")

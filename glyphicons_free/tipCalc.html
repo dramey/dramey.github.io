@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!--My style sheet-->
+    <link rel="stylesheet" href="tipCalc.css">
+  
+
+</head>
+
+<body>
+     <span class='st_sharethis_large' displayText='ShareThis'></span>
+     <span class='st_facebook_large' displayText='Facebook'></span>
+    <h1>Deb's Tip Calculator</h1>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+<div class="col-sm-1"></div>
+            <div class="col-sm-5 classBack">
+                <h3>Enter the Amount of Your Bill Below</h3>
+
+                <p><input type="number" id="amountOfBill" placeholder="Enter Amount" maxlength="6">
+                    <p>
+
+                        <h3>Calculate your Tip</h3>
+                        <select id="tipPercent">
+                                    <option disabled selected value="0">
+                                        <option value="0.30">Tip Percentage 30%</option>
+                                        <option value="0.20">Tip Percentage 20%</option>
+                                        <option value="0.15">Tip Percentage 15%</option>
+                                        <option value="0.10">Tip Percentage 10%</option>
+                                        <option value="0.05">Tip Percentage 5%</option>
+                                        </select>
+
+                        <br />
+
+                        <h3>How Many People in Your Party</h3>
+
+                        <input type="number" id="amountInParty" placeholder="Number">
+
+                        <br />
+                        <br />
+                        <button type="button" id="add">Calculate</button><button type="button" id="zeroOut">Clear</button>
+                        <br/>
+                        <br />
+                        <div id="showAmounts" class="toAlignRight"></div>
+                        <br />
+                        
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+     <!--This is for my Share button-->
+     <script type="text/javascript">var switchTo5x=true;</script>
+     <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+     <script type="text/javascript">stLight.options({publisher: "8d5e89c4-7522-453f-b2c8-dc0299da8e05", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!--Project Js-->
+    <script type="text/javascript" src="tipCalc.js"></script>
+</body>
+
+</html>

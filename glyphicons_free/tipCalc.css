@@ -1,0 +1,43 @@
+body{
+background-image: url("back.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+
+} 
+.classBack{
+    background-image: url("contpic.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black 8px;
+    border-radius: 10%;
+    border-style: ridge;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+
+} 
+button{
+    border: solid 5px green;
+}
+input{
+    border: solid 5px green;
+}
+select{
+    border: solid 5px green;
+}
+    
+h1{
+ text-align: center;
+  font: 68px/68px "Chewy",Arial, sans-serif;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  color:mediumseagreen;
+}
+h2{
+    text-align: center;
+}
+.amount{
+    text-align: center;
+    border-style: solid green;
+}
+.toAlignRight p{
+    text-align: right;
+}
