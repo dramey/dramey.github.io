@@ -10,6 +10,10 @@ body {
 .border{
   border: solid 8px black
 }
+.emailpic{
+ border: solid 8px black;
+ font-size: 100px; 
+}
 p {
   font-size: 20px;
 }
