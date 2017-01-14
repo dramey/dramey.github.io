@@ -12,11 +12,7 @@ body {
 }
 .emailpic{
  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 30em;
-  padding: 0 0.25em; 
+  font-size: 10em; 
 }
 p {
   font-size: 20px;
