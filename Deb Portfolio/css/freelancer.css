@@ -8,10 +8,9 @@ body {
   overflow-x: hidden;
 }
 .border{
-  border: solid 8px black
+  border: solid 8px black;
 }
 .emailpic{
- border: solid 8px black;
  font-size: 100px; 
 }
 p {
