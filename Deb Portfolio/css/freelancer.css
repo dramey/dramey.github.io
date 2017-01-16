@@ -453,6 +453,9 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+.myShadow{
+    box-shadow: 0 -2px 8px 0 rgba(0,0,0,0.8), 0 2px 8px 0 rgba(0,0,0,0.8);
+}
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
