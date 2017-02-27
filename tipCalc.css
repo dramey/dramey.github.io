@@ -11,7 +11,9 @@ background-size: cover;
     border: solid black 8px;
     border-radius: 10%;
     border-style: ridge;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight:bolder; 
+    
+    letter-spacing: 2px;
     
 
 } 

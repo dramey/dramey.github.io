@@ -22,7 +22,15 @@ $("#add").click(function () {
               window.alert("Please Choose a Tip Percentage")
           } else if (amountInParty === "") {
             window.alert("All fields Must be Entered");
-
+} else if (amountInParty == 1) {
+            totalOfTip = (amountOfBill * tipAmount).toFixed(2);
+             totalTipEach = ((totalOfTip / amountInParty) * 100/100);
+            totalBillIfSplit = ((amountOfBill / amountInParty) + totalTipEach).toFixed(2);
+            var div = $("<div></div>");
+                div.append("Total tip altogether is:" + "$" + totalOfTip + "<br />" + "<br />")
+                .append ("<p>" + "Total Bill per Person:" + "$" + totalBillIfSplit + "</center>" + "<br />" + "</p>")
+                $("#showAmounts").append(div);
+                $("#amountOfBill").val("");
         } else {
 // The below will do math if the above have all been 
             totalOfTip = (amountOfBill * tipAmount).toFixed(2);
