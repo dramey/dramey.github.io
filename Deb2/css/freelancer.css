@@ -33,6 +33,9 @@ a.active {
   color: seagreen;
   outline: none;
 }
+.green{
+  background-color: seagreen;
+}
 h1,
 h2,
 h3,
